@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<link href="bodybuilding.css" rel="stylesheet" type="text/css" />
+
+<script>
+
+
+/*
+function showWorkouts() {
+		document.getElementById('Menu_Workouts').style.display = 'block';  
+}
+
+function hideWorkouts() {
+		document.getElementById('Menu_Workouts').style.display = 'none';  
+}
+*/
+
+function DisplayWorkouts(identifier) {
+  var menuBox = document.getElementById(identifier);    
+  if(menuBox.style.display == "block") { // if is menuBox displayed, hide it
+    menuBox.style.display = "none";
+  }
+  else { // if is menuBox hidden, display it
+    menuBox.style.display = "block";
+  }
+}
+
+
+</script>
+</head>
+<body>
+<div id="header_wrapper">
+ <div id="header">
+    
+   	<div id="site_logo"></div>
+        
+		<div id="menu">
+      		<div id="menu_left"></div>
+            <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a class="Workouts current" href="#" id="idWorkouts" onclick="DisplayWorkouts('Menu_Workouts')">Workouts</a></li>
+                  <li id="Nutrition"><a href="#" onclick="DisplayWorkouts('Menu_Nutrition')">Nutrition</a></li>
+                  <li><a href="aboutus.html">About us</a></li>
+				  <li id="Media"><a href="#" onclick="DisplayWorkouts('Menu_Media')">Media</a></li>
+                  <li><a href="contact.html" class="last">Contact</a></li>
+            </ul>    	
+		</div> 
+
+
+		
+		
+    
+    </div>
+</div> 
+
+		<div id="Menu_Workouts">
+
+							  <div id="submenu-content"><a href="getlean.html">Get Lean</a></div>
+							  <div id="submenu-content"><a href="weightloss.html">Weight Loss</a></div>
+							  <div id="submenu-content"><a href="gainweight.html">Gain weight</a></div>  	
+					</div>		
+		</div>
+		
+		<div id="Menu_Nutrition">
+            
+                  <div id="submenu-content"><a href="dietplan.html">Diet Plan</a></div>
+                  <div id="submenu-content"><a href="supplements.html">Supplements</a></div>
+                  <div id="submenu-content"><a href="Recipes.html">Recipes</a></div>
+           	
+		</div> 
+		
+		<div id="Menu_Media">
+            
+                  <div id="submenu-content"><a href="photo.html">Photo gallery</a></div>
+				  <div id="submenu-content"><a href="video.html">Audio & Video</a></div>
+           	
+		</div> 
+
+<div id="content_wrapper">
+	<div id="content">
+    
+    	<div id="column_w530">
+        	
+            <div class="header_02">Workouts > Weight loss</div>
+            
+			<p><img src="images/Weight-Loss-For-Men.png" width="400px" height="310px"/></p>
+			
+			
+            <p class="em_text">When it comes to measuring weight loss, the numbers game can be deceiving. Add more accuracy to your fitness journey with these insider tips.</p>           
+
+			<p>1. Take Progress Photos</p>
+			<p>As uncomfortable as it might be to snap a photo when you feel out of shape, less than stellar, or downright schlubby, knowing where you started is essential. It's easy to let the scale rule, but when you consider things like water weight, lean-mass gains, and bodyweight distribution, relying on a single number to decide if you're headed in the right direction seems arbitrary. Since you see yourself in the mirror daily, changes can be nearly imperceptible. Photos give you that necessary degree of separation—allowing you to take a step back and reflect weeks later. When you start your fitness journey, begin by taking photos of your front, side, and back. Every few weeks, take additional photos. If you're looking for accuracy, there's no need to suck in your gut or push your stomach out. Just stay relaxed, and keep the conditions the same to most accurately reflect your visual progress over time. This means wearing the same outfit, taking photos at the same time of day, and using the same angles and lighting.</p>
+			<p></p>
+			
+			<p>2. Retest Your Benchmark Lifts</p>
+			<p>Instead of relying solely on reducing numbers, try increasing them—in the form of weights, that is. When you kick off your journey, take some time to test your strength benchmarks. How much can you press and pull? What do your squat numbers look like? By having a ballpark idea of your strength baseline, you'll know what achievable numbers to aim for.</p>
+			<p></p>
+			
+			<p>3. Use A Tape Measure</p>
+			</p><p>You might take dipping numbers on the scale as an indication of progress, but not all weight loss is fat loss. To see if you're leaning out, a tape measure can be a more effective tool. Some areas you might want to track the inches on include your chest, hips, waist, thighs, biceps, and shoulders.
+
+        </div>
+        
+        
+    	<div class="cleaner"></div>
+    </div> <!-- end of content wrapper -->
+</div> <!-- end of content wrapper -->
+
+<div id="footer_wrapper">
+
+<div id="templatemo_footer_wrapper">
+
+
+	<div id="footer">
+    	
+		<div id="templatemo_footer_wrapper">
+
+	<div id="templatemo_footer">
+    	
+        <div class="section_w180">
+        	<div class="header_05"><a href="index.html" style="color:white;">Home</a></div>
+          
+        </div>
+        
+        <div class="section_w180">
+        	<div class="header_05">Workouts</div>
+            <div class="section_w180_content">
+                <ul class="footer_menu_list">
+                    <li><a href="getlean.html">Get lean</a></li>
+                    <li><a href="weightloss.html">Weight Loss</a></li>
+                    <li><a href="gainweight.html">Gain Weight</a></li>             
+                </ul>
+            </div>
+        </div>
+                
+        <div class="section_w180">
+        	<div class="header_05">Nutrition</div>
+            <div class="section_w180_content"> 
+                <ul class="footer_menu_list">
+                    <li><a href="dietplan.html">Diet Plan</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>            
+                </ul>
+			</div>
+        </div>
+        
+        <div class="section_w180">
+	        <div class="header_05"><a href="aboutus.html" style="color:white;">About Us</a></div>
+            
+        </div>
+		
+		 <div class="section_w180">
+	        <div class="header_05">Media</div>
+            
+            <div class="section_w180_content">
+            
+                <ul class="footer_menu_list">
+                    <li><a href="photo.html">Photo Gallery</a></li>
+                    <li><a href="video.html">Audio & Video</a></li>          
+                </ul>
+			</div>
+        </div>
+		
+		 <div class="section_w180">
+	        <div class="header_05"><a href="contact.html" style="color:white;">Contact</a></div>
+            
+        </div>
+		
+		</div>
+		
+        <div class="margin_bottom_20">
+	</div>
+        Copyright © 2017 <a href="#">BODYBUILDING</a> by <a href="" target="_parent">Yogish Antoo</a>
+        <div class="cleaner"></div>
+    </div> <!-- end of footer -->
+</div> <!-- end of footer -->
+</div>
+</div>
+
+</body>
+</html>

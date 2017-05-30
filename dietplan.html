@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<link href="bodybuilding.css" rel="stylesheet" type="text/css" />
+
+<script>
+
+
+/*
+function showWorkouts() {
+		document.getElementById('Menu_Workouts').style.display = 'block';  
+}
+
+function hideWorkouts() {
+		document.getElementById('Menu_Workouts').style.display = 'none';  
+}
+*/
+
+function DisplayWorkouts(identifier) {
+  var menuBox = document.getElementById(identifier);    
+  if(menuBox.style.display == "block") { // if is menuBox displayed, hide it
+    menuBox.style.display = "none";
+  }
+  else { // if is menuBox hidden, display it
+    menuBox.style.display = "block";
+  }
+}
+
+
+</script>
+</head>
+<body>
+<div id="header_wrapper">
+ <div id="header">
+    
+   	<div id="site_logo"></div>
+        
+		<div id="menu">
+      		<div id="menu_left"></div>
+            <ul>
+                  <li><a href="index.html" class="">Home</a></li>
+                  <li><a class="Workouts" href="#" id="idWorkouts" onclick="DisplayWorkouts('Menu_Workouts')">Workouts</a></li>
+                  <li id="Nutrition"><a href="#" class="current" onclick="DisplayWorkouts('Menu_Nutrition')">Nutrition</a></li>
+                  <li><a href="aboutus.html">About us</a></li>
+				  <li id="Media"><a href="#" onclick="DisplayWorkouts('Menu_Media')">Media</a></li>
+                  <li><a href="contact.html" class="last">Contact</a></li>
+            </ul>    	
+		</div> 
+
+
+		<div id="Menu_Media">
+            
+                  <div id="submenu-content"><a href="photo.html">Photo gallery</a></div>
+				  <div id="submenu-content"><a href="video.html">Audio & Video</a></div>
+           	
+		</div> 
+		
+    
+    </div>
+</div> 
+
+		<div id="Menu_Workouts">
+
+							  <div id="submenu-content"><a href="getlean.html">Get Lean</a></div>
+							  <div id="submenu-content"><a href="weightloss.html">Weight Loss</a></div>
+							  <div id="submenu-content"><a href="gainweight.html">Gain weight</a></div>  	
+					</div>		
+		</div>
+		
+		<div id="Menu_Nutrition">
+            
+                  <div id="submenu-content"><a href="dietplan.html">Diet Plan</a></div>
+                  <div id="submenu-content"><a href="supplements.html">Supplements</a></div>
+                  <div id="submenu-content"><a href="Recipes.html">Recipes</a></div>
+           	
+		</div> 
+		
+
+<div id="content_wrapper">
+	<div id="content">
+    
+    	<div id="column_w530">
+        	
+            <div class="header_02">Nutrition > Diet plan</div>
+            
+            <p class="em_text">If you keep trying to diet, but with no success, the reasons might be simpler than you think. The solutions might be, too.</p>           
+
+			<p>1. You Don't Stick To Your Diet Long Enough</p>
+			<p>Your challenge is to choose a plan that seems realistic for your lifestyle and stick to it. It's that simple. Stop questioning whether there's a better program out there, and commit to the task at hand. Consistency is key when it comes to achieving weight loss. This might not be the sexy answer you were hoping for, but it's the truth.</p>
+			<p></p>
+			
+			<p>2. You Don't Consume Enough Calories</p>
+			<p>Instead of starving yourself, start by keeping a detailed and accurate food journal for a minimum of 1-2 weeks. A clear picture of what you eat every day will emerge. Then, make small adjustments to your food choices so that you start to lose weight—but without losing muscle. Start by aiming to lose no more than 0.5-1.0 percent of your current body weight per week to maximize muscle retention.[1] If you weigh 130 pounds, try to lose 0.6-1.3 pounds per week. If you weigh 160 pounds, shoot for 0.8-1.6 pounds.</p>
+			<p></p>
+			
+			<p>3. You've Been Dieting For Too Long</p>
+			<p>Give your body a break! If you've been consistently dieting for more than three months, or if you're spending way too much time fantasizing about the pastry shop down the street, take a break from dieting. Oddly enough, ending a diet can sometimes make it easier to lose weight. Eating normally for a while can help your cravings subside. And that can make it easier for you to choose healthier foods, give yourself more reasonable serving sizes, and lose weight.</p>
+
+        </div>
+        
+        
+    	<div class="cleaner"></div>
+    </div> <!-- end of content wrapper -->
+</div> <!-- end of content wrapper -->
+
+<div id="footer_wrapper">
+
+<div id="templatemo_footer_wrapper">
+
+
+	<div id="footer">
+    	
+		<div id="templatemo_footer_wrapper">
+
+	<div id="templatemo_footer">
+    	
+        <div class="section_w180">
+        	<div class="header_05"><a href="index.html" style="color:white;">Home</a></div>
+          
+        </div>
+        
+        <div class="section_w180">
+        	<div class="header_05">Workouts</div>
+            <div class="section_w180_content">
+                <ul class="footer_menu_list">
+                    <li><a href="getlean.html">Get lean</a></li>
+                    <li><a href="weightloss.html">Weight Loss</a></li>
+                    <li><a href="gainweight.html">Gain Weight</a></li>             
+                </ul>
+            </div>
+        </div>
+                
+        <div class="section_w180">
+        	<div class="header_05">Nutrition</div>
+            <div class="section_w180_content"> 
+                <ul class="footer_menu_list">
+                    <li><a href="dietplan.html">Diet Plan</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>            
+                </ul>
+			</div>
+        </div>
+        
+        <div class="section_w180">
+	        <div class="header_05"><a href="aboutus.html" style="color:white;">About Us</a></div>
+            
+        </div>
+		
+		 <div class="section_w180">
+	        <div class="header_05">Media</div>
+            
+            <div class="section_w180_content">
+            
+                <ul class="footer_menu_list">
+                    <li><a href="photo.html">Photo Gallery</a></li>
+                    <li><a href="video.html">Audio & Video</a></li>          
+                </ul>
+			</div>
+        </div>
+		
+		 <div class="section_w180">
+	        <div class="header_05"><a href="contact.html" style="color:white;">Contact</a></div>
+            
+        </div>
+		
+
+		</div>
+		
+        <div class="margin_bottom_20">
+	</div>
+        Copyright © 2017 <a href="#">BODYBUILDING</a> by <a href="" target="_parent">Yogish Antoo</a>
+        <div class="cleaner"></div>
+    </div> <!-- end of footer -->
+</div> <!-- end of footer -->
+</div>
+</div>
+
+</body>
+</html>

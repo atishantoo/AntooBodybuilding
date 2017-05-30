@@ -1,0 +1,151 @@
+<!DOCTYPE html>  
+<html >
+<head>
+
+<script type="text/javascript">
+function eventAlert(){
+
+	var mylist =  document.getElementById("mylist");
+	var mylistVal = mylist.options[mylist.selectedIndex].text;
+    alert(mylistVal);
+}
+
+function validateForm()
+{
+ 
+ var name=document.forms["form1"]["name"];
+ var company=document.forms["form1"]["company"];
+ var tel=document.forms["form1"]["tel"];
+ var email=document.forms["form1"]["email"];
+ var address=document.forms["form1"]["address"];
+ var quantity=document.forms["form1"]["quantity"];
+ 
+ if (name.value=="" || company.value=="" || tel.value=="" || email.value=="" || address.value=="")
+   {
+  alert("Fields cannot be blank.");
+  return false;
+   }
+ 
+ else if(tel.value.length!=8 )
+   {
+   alert("Daytime Tel must have 8 characters.");
+  tel.value="";
+  tel.focus();
+  return false;
+   }
+ else if ((!namepattern.test(name.value)))
+   {
+  alert("Name should contain only alphabets.");
+  name.value="";
+  name.focus();
+  return false;
+   }
+ 
+ else if(isNaN(x.value))
+ {
+  alert("Contact number should contain only digits.");
+  x.value="";
+  x.focus();
+  return false;
+ }
+ 
+ if(!emailpattern.test(email.value))
+ {
+  alert("Invalid email.");
+  email.value="";
+  email.focus();
+  return false;
+ }
+ 
+ else if(quantity.value.length > 2)
+   {
+   alert("Quantity must have max 2 characters.");
+  quantity.value="";
+  quantity.focus();
+  return false;
+   }
+ 
+
+ if(confirm("Do you want to submit the form?"))
+{
+alert("Registration Form Submitted Successfully.");
+}
+else
+return false;
+
+}
+
+function calculatetotal(){
+document.getElementById("total").value=document.getElementById("quantity").value * 15;
+}
+
+</script>
+
+</head>
+<body>
+
+<h1>Registration Form</h1>
+<p>Please send me more infomation about the:</p>
+
+<form name="form1"  method="post" action="success.html">
+<select id="mylist" onchange="eventAlert()">  
+<option selected="" value="Default">Annual Lecture, 7 December 2000</option>  
+<option>event1</option>  
+<option>event2</option>  
+<option>event3</option>  
+<option>event4</option>  
+<option>event5</option>  
+</select>   
+
+<table border='0'>
+ <tr>
+  <td><LABEL for="name">Name:</LABEL></td>
+         <td><INPUT type="text" id="name"></td>
+ </tr>
+ <tr>
+  <td><LABEL for="company">Company:</LABEL></td>
+  <td><INPUT type="text" id="company"></td>
+ </tr>
+ 
+ <tr>
+  <td><LABEL for="tel">Daytime Tel:</LABEL></td>
+  <td><INPUT type="text" id="tel"></td>
+ </tr>
+ 
+ <tr>
+  <td><LABEL for="email">Email address:</LABEL></td>
+  <td><INPUT type="text" id="email"></td>
+ </tr>
+        
+ <tr>
+  <td><LABEL for="address" style="text-align:left;">Address:</LABEL></td>
+  <td><textarea id="address"  name="address" rows="4" style="height:100px;overflow-y:scroll;" cols="20"></textarea>   
+  </td>
+ </tr>
+
+<tr>
+  <td><LABEL for="quantity">Quantity:</LABEL></td>
+  <td><INPUT value="1" type="text" id="quantity" onchange="calculatetotal()"></td>
+ </tr>
+ 
+
+<tr>
+  <td><LABEL for="total">Total Cost:</LABEL></td>
+  <td><INPUT value="15" type="text" id="total"></td>
+ </tr>
+
+<tr>
+  <td></td><td><br/><INPUT type="submit" onClick="return validateForm()" value="Submit">
+ </tr>
+ 
+
+ 
+    </table>
+ </FORM>
+ 
+ <p><u>Note: Tickets for all events are £15.</u></p>
+
+
+
+</body>
+</html>

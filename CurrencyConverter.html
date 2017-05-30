@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+
+function convert() {
+    var fromVal = document.getElementById("convertfrom").value; 
+	var toVal =    document.getElementById("convertto").value;
+	var fromCurrency =  document.getElementById("fromselect");
+	var fromCurrencyVal = fromCurrency.options[fromCurrency.selectedIndex].value;
+	var toCurrency =  document.getElementById("toselect");
+	var toCurrencyVal = toCurrency.options[toCurrency.selectedIndex].value;
+	
+	var NewConvertedVal = 0;
+	if (fromCurrencyVal == "pound" ){
+		if (toCurrencyVal == "pound"){
+			NewConvertedVal = fromVal;
+		}
+		if (toCurrencyVal == "usd"){
+			NewConvertedVal = fromVal * 1.28;
+		}
+		if (toCurrencyVal == "mur"){
+			NewConvertedVal = fromVal * 44.54;
+		}
+		if (toCurrencyVal == "eur"){
+			NewConvertedVal = fromVal * 1.15;
+		}
+		if (toCurrencyVal == "yen"){
+			NewConvertedVal = fromVal * 142.61;
+		}
+	}
+	else if (fromCurrencyVal == "usd" ){
+		if (toCurrencyVal == "pound"){
+			NewConvertedVal = fromVal * 0.78;
+		}
+		if (toCurrencyVal == "usd"){
+			NewConvertedVal = fromVal;
+		}
+		if (toCurrencyVal == "mur"){
+			NewConvertedVal = fromVal * 34.77;
+		}
+		if (toCurrencyVal == "eur"){
+			NewConvertedVal = fromVal * 0.89;
+		}
+		if (toCurrencyVal == "yen"){
+			NewConvertedVal = fromVal * 111.33;
+		}
+	}
+	else if (fromCurrencyVal == "mur" ){
+		if (toCurrencyVal == "pound"){
+			NewConvertedVal = fromVal * 0.022;
+		}
+		if (toCurrencyVal == "usd"){
+			NewConvertedVal = fromVal * 0.029;
+		}
+		if (toCurrencyVal == "mur"){
+			NewConvertedVal = fromVal;
+		}
+		if (toCurrencyVal == "eur"){
+			NewConvertedVal = fromVal * 0.026;
+		}
+		if (toCurrencyVal == "yen"){
+			NewConvertedVal = fromVal * 3.21;
+		}
+	}
+	else if (fromCurrencyVal == "eur" ){
+		if (toCurrencyVal == "pound"){
+			NewConvertedVal = fromVal * 0.87;
+		}
+		if (toCurrencyVal == "usd"){
+			NewConvertedVal = fromVal * 1.12;
+		}
+		if (toCurrencyVal == "mur"){
+			NewConvertedVal = fromVal * 38.89;
+		}
+		if (toCurrencyVal == "eur"){
+			NewConvertedVal = fromVal;
+		}
+		if (toCurrencyVal == "yen"){
+			NewConvertedVal = fromVal * 124.51;
+		}
+	}
+	else if (fromCurrencyVal == "yen" ){
+		if (toCurrencyVal == "pound"){
+			NewConvertedVal = fromVal * 0.0070;
+		}
+		if (toCurrencyVal == "usd"){
+			NewConvertedVal = fromVal * 0.0090;
+		}
+		if (toCurrencyVal == "mur"){
+			NewConvertedVal = fromVal * 0.31;
+		}
+		if (toCurrencyVal == "eur"){
+			NewConvertedVal = fromVal * 0.0080;
+		}
+		if (toCurrencyVal == "yen"){
+			NewConvertedVal = fromVal;
+		}
+	}
+	
+	 document.getElementById("convertto").value = NewConvertedVal;
+	 
+}
+
+function reset(){
+	document.getElementById("convertfrom").value = 0;
+	document.getElementById("convertto").value = 0;
+}
+
+
+</script>
+</head>
+
+<body>
+
+<div style="    color: red;font-size: 23px;padding: 5px 5px 15px 98px;">
+Currency Converter
+</div>
+
+<div>
+<table style="    background: yellow;
+    padding: 8px;
+    border: solid 1px;">
+
+<tr>
+	<td>
+	Convert from:
+	</td>
+	<td>
+	 <input type="text" name="convertfrom" id="convertfrom" value="0" onfocusout="convert()"/>
+	</td>
+	<td>
+	<select name="fromselect" id="fromselect" onchange="convert()">
+	  <option value="pound">Pound Sterling</option>
+	  <option value="usd">US Dollar</option>
+	  <option value="mur">Mauritian RS</option>
+	  <option value="eur">Euro</option>
+	  <option value="yen">Yen</option>
+	</select>
+	</td>
+</tr>
+
+<tr>
+	<td>
+	Convert to:
+	</td>
+	<td>
+	 <input type="text" name="convertto" id="convertto" value="0" onfocusout="convert()"/>
+	</td>
+	<td>
+	<select name="toselect" id="toselect" onchange="convert()">
+	  <option value="pound">Pound Sterling</option>
+	  <option value="usd">US Dollar</option>
+	  <option value="mur">Mauritian RS</option>
+	  <option value="eur">Euro</option>
+	  <option value="yen">Yen</option>
+	</select>
+	</td>
+</tr>
+
+</table>
+</div>
+
+<div>
+<table style="    border: solid 1px;
+    background-color: #4CAF50;
+    left: 125px;
+    position: relative;
+    top: 10px;	">
+
+<tr>
+	<td>
+	<button type="button" id="btn7">7</button>
+	</td>
+	
+	<td>
+	<button type="button" id="btn8">8</button>
+	</td>
+
+	<td>
+	<button type="button" id="btn9">9</button>
+	</td>
+	
+</tr>
+
+<tr>
+	<td>
+	<button type="button" id="btn4">4</button>
+	</td>
+	
+	<td>
+	<button type="button" id="btn5">5</button>
+	</td>
+
+	<td>
+	<button type="button" id="btn6">6</button>
+	</td>
+	
+</tr>
+
+<tr>
+	<td>
+	<button type="button" id="btn7">1</button>
+	</td>
+	
+	<td>
+	<button type="button" id="btn8">2</button>
+	</td>
+
+	<td>
+	<button type="button" id="btn9">3</button>
+	</td>
+	
+</tr>
+
+<tr>
+	<td>
+	<button type="button" id="btn0">0</button>
+	</td>
+	
+	<td>
+	<button type="button" id="btndoc">.</button>
+	</td>
+
+	<td>
+	<button type="button" id="btnc" onclick="reset()">C</button>
+	</td>
+	
+</tr>
+
+</table>
+</div>
+
+</body>
+
+</html>
